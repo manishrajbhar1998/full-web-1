@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"> -->
+    <script src="https://kit.fontawesome.com/7244f3fdfb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Header section start -->
+    <section class="sub-header">
+         <nav>
+             <a href="index.html"><img src="images/logo.png"></a>
+             <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                 <ul>
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="about.html">About</a></li>
+                     <li><a href="course.html">Course</a></li>
+                     <li><a href="">Contact</a></li>
+                     <li><a href="blog.html">Blog</a></li>
+                 </ul>
+             </div>
+             <i class="fa fa-bars" onclick="showMenu()"></i>
+         </nav>
+         <h1>About us</h1>
+    </section>
+    <!-- Header section end -->
+
+    <!-- About us section start -->
+     <section class="about-us">
+         <div class="row">
+             <div class="about-col">
+                <h1>We are the world's largest university</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse in eius accusamus ad qui distinctio, autem saepe architecto, sapiente error numquam incidunt. Numquam aspernatur, quas perspiciatis minus fuga error molestias quo, repudiandae illo tempore voluptate quos dolores eius ipsam obcaecati eaque autem impedit? Laboriosam doloremque aliquam, culpa laudantium ullam tempore?</p>
+                <a href="" class="hero-btn red-btn">Explore Now</a>
+             </div>
+             <div class="about-col">
+               <img src="images/about.jpg" alt="">
+             </div>
+         </div>
+     </section>
+    <!-- About us section ends -->
+    
+    <!-- Footer section start -->
+     <section class="footer">
+         <h4>About Us</h4>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi odit delectus veritatis nam impedit dolorem dignissimos<br> doloremque, repellendus beatae blanditiis ducimus cum sequi officia minus?</p>
+         <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin"></i>
+         </div>
+         <p>MAde by Fiber tect</p>
+     </section>
+    <!-- Footer section start -->
+
+    <!-- javascript for toggle menu -->
+    <script>
+       var navLinks = document.getElementById("navLinks");
+       function showMenu(){
+           navLinks.style.right = "0";
+       }
+       function hideMenu(){
+           navLinks.style.right = "-200px";
+       }
+    </script>
+</body>
+</html>
